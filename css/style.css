@@ -1,7 +1,8 @@
-body {
+/* start universal and home page */
+html, body {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 nav {
@@ -43,17 +44,18 @@ nav div, nav button {
 }
 
 .content {
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 footer {
     background-color: #292B2C;
     height: auto;
-    width: 100%;
-    position: relative;
-    left: 15px;
-    min-height: 5em;
     color: white;
+    padding: 0.5em 0;
+}
+
+footer > .row {
+    width: calc(100% + 15px);
 }
 
 footer a {
@@ -62,7 +64,6 @@ footer a {
 }
 
 footer p a:hover {
-    /*text-decoration: underline;*/
     color: white;
     border-bottom: 1px dotted white;
     text-decoration: none;
@@ -72,12 +73,13 @@ footer a:visited {
     color: white;
 }
 
-footer div {
+footer > div div {
     align-content: center;
-    padding: 10px;
+    padding: 5px;
+    margin: 0;
 }
 
-footer div p {
+footer > div div p {
     text-align: center;
     vertical-align: middle;
     display: inline-block;
@@ -94,18 +96,15 @@ footer div p {
     text-align: center;
 }
 
-footer .col-sm-4:last-child {
+footer > div .col-sm-4:last-child {
     align-content: center;
     alignment: center;
 }
 
-.col-centered{
-    float: none;
-    margin: 0 auto;
-}
-
 .icon-list {
-    margin-left: 4em;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .icon-list img {
@@ -113,4 +112,23 @@ footer .col-sm-4:last-child {
     height: 2em;
     margin: 0 10px;
 }
+/* end universal and home page */
+
+/********************************************/
+
+/* start sitemap page */
+#sitemap-container ul li {
+    list-style-type: none;
+}
+
+#sitemap-container ul .sublist {
+    color: black;
+    text-decoration: none;
+}
+
+.sublist + ul {
+    display: none;
+}
+
+/* end sitemap page */
 
