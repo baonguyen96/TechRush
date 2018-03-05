@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    max-width: 100%;
 }
 
 nav {
@@ -51,7 +52,7 @@ footer {
     background-color: #292B2C;
     height: auto;
     color: white;
-    padding: 0.5em 0;
+    padding: 0.5em 0 0.7em 0;
 }
 
 footer > .row {
@@ -75,7 +76,7 @@ footer a:visited {
 
 footer > div div {
     align-content: center;
-    padding: 5px;
+    padding: 0.4em 0.25em;
     margin: 0;
 }
 
@@ -86,7 +87,7 @@ footer > div div p {
     width: 100%;
     margin: 0 auto;
     position:relative;
-    top:50%;
+    top: calc(50% - 3px);
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -94,11 +95,6 @@ footer > div div p {
 
 .copyright {
     text-align: center;
-}
-
-footer > div .col-sm-4:last-child {
-    align-content: center;
-    alignment: center;
 }
 
 .icon-list {
@@ -110,15 +106,30 @@ footer > div .col-sm-4:last-child {
 .icon-list img {
     width: 2em;
     height: 2em;
-    margin: 0 10px;
+    margin: 0 0.5em;
 }
 /* end universal and home page */
 
 /********************************************/
 
 /* start sitemap page */
+#sitemap-container {
+    min-height: 15em;
+    width: 100%;
+    overflow: hidden;
+}
+
 #sitemap-container ul li {
     list-style-type: none;
+    position: relative;
+    margin: 0.75em 0 0.75em 0;
+}
+
+
+#sitemap-container ul li a:not('.sublist') {
+    font-family: FontAwesome, serif;
+    content: "\f111";
+    display: inline-block;
 }
 
 #sitemap-container ul .sublist {
@@ -126,8 +137,65 @@ footer > div .col-sm-4:last-child {
     text-decoration: none;
 }
 
+#sitemap-container ul .sublist:before {
+    font-family: FontAwesome, serif;
+    content: "\f138";
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+
+#sitemap-container ul .dropdown:before {
+    font-family: FontAwesome, serif;
+    content: "\f13a";
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+
 .sublist + ul {
     display: none;
+}
+
+.tooltiptext {
+    display: inline-block;
+    visibility: hidden;
+    width: fit-content;
+    background-color: #292B2C;
+    color: #fff;
+    text-align: center;
+    margin-top: 1px;
+    padding: 0 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltiptext::after {
+    content: " ";
+    position: absolute;
+    margin-top: -5px;
+    border: 5px solid transparent;
+    top: 50%;
+}
+
+.tooltiptext-right {
+    margin-left: 1em;
+}
+
+.tooltiptext-right::after {
+    right: 100%;
+    border-color: transparent black transparent transparent;
+}
+
+.tooltiptext-left {
+    margin-right: 1em;
+    right: 97%;
+}
+
+.tooltiptext-left::after {
+    left: 100%;
+    border-color: transparent transparent transparent black;
 }
 
 /* end sitemap page */

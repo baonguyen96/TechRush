@@ -1,0 +1,42 @@
+/* ipad */
+@media screen and (min-width: 481px) {
+
+    #navigator {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    footer {
+        padding: 1em 0;
+    }
+
+    footer > div .col-sm-4:nth-child(2) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #sitemap-container ul li {
+        padding-left: 1.3em;
+        margin-left: 0.7em;
+    }
+
+    #sitemap-container ul li a:not('.sublist') {
+        margin-left: -1.3em;
+        width: 1.3em;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1025px) {
+    html, body {
+        font-size: 18px;
+    }
+
+    .navbar-nav li {
+        text-align: center;
+    }
+
+    #sitemap-container {
+        min-height: 33em;
+    }
+}
