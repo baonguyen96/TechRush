@@ -1,0 +1,45 @@
+* {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.category {
+	height: 250px;
+	background-size: cover;
+	margin: 20px 25px;
+	border-radius: 25px;
+}
+
+.category h2 {
+	font-size: 40px;
+	color: white;
+	padding: 10px;
+}
+
+.lessons li a {
+	color: white !important;
+	cursor: pointer;
+	font-size: 25px;
+}
+
+.lessons li{
+	list-style: none;
+}
+
+.lessons ul {
+	position: absolute;
+	top: 125px;
+	right: 50px;
+	margin-top: -53.571428625px;
+}
+
+#html {
+	background: url('https://png.pngtree.com/thumb_back/fh260/back_pic/00/03/19/65561db9d067462.jpg');
+}
+
+#css {
+	background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/59/79/0557a49d0f32599.jpg');
+}
+
+#bootstrap {
+	background: url('http://www.powerpointhintergrund.com/uploads/red-background-6.jpg');
+}
