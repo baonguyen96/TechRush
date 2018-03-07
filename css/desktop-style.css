@@ -6,11 +6,19 @@
         padding-right: 5%;
     }
 
-    footer {
+    #content-page-content-wrapper > div {
+        position: relative;
+    }
+
+    .category div.title h4 {
+        padding-top: 0;
+    }
+
+    #footer {
         padding: 1em 0;
     }
 
-    footer > div .col-sm-4:nth-child(2) {
+    #footer > div .col-sm-4:nth-child(2) {
         padding-left: 0;
         padding-right: 0;
     }
@@ -26,6 +34,23 @@
     }
 }
 
+@media screen and (min-width: 650px) {
+
+    .lessons ul {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .category .title hr {
+        display: none;
+    }
+
+}
+
 /* desktop */
 @media screen and (min-width: 1025px) {
     html, body {
@@ -34,6 +59,10 @@
 
     .navbar-nav li {
         text-align: center;
+    }
+
+    .lessons ul {
+        width: 50%;
     }
 
     #sitemap-container {

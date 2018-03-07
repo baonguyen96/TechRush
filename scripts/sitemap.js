@@ -54,7 +54,7 @@ function setupTooltipLocation(e, $anchor) {
 
     $tooltip.css({
         'display': 'inline-block',
-        'width': 'fit-content',
+        'width': 'fit-page-content',
         'height': 'auto',
         'min-width': minWidth + 'px'
     });
