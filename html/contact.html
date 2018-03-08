@@ -44,7 +44,57 @@
             <section class="page-content">
                 <h3>Contact Us</h3>
                 <hr/>
-                <!-- page-content of the page goes here-->
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="full-name-input" class="form-label">Full name</label>
+                        <input type="text" class="form-control" id="full-name-input" aria-describedby="emailHelp" placeholder="Enter your full name">
+                    </div>
+
+                    <br/>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <br/>
+
+                    <fieldset class="form-group">
+                        <label class="form-label">What is/are your concern(s)?</label>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="optionsCheckboxes" id="optionsRadios1" value="option1" checked>
+                                Learn more about our topics
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="optionsCheckboxes" id="optionsRadios2" value="option2">
+                                Request website demo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="optionsCheckboxes" id="optionsRadios3" value="option3">
+                                Others
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <br/>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea" class="form-label">Tell us more about your need(s)</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Enter some messages..."></textarea>
+                    </div>
+
+                    <br/>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
             </section>
 
         </div>
