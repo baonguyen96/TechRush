@@ -1,21 +1,14 @@
 /* start universal and home page */
-
 html, body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     max-width: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
 a:hover {
     text-decoration: none;
-}
-
-nav {
-    padding: 30px 15px 15px 15px;
-    height: auto;
-    min-height: 5em;
 }
 
 nav div, nav button {
@@ -28,7 +21,6 @@ nav div, nav button {
 
 .vertical-middle {
     position:relative;
-    /*top: calc(50% - 3px);*/
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -43,21 +35,8 @@ nav div, nav button {
     min-width: 100px;
 }
 
-.jumbotron {
-    align-content: center;
-    border-radius: 1em;
-}
-
-.jumbotron * {
-    text-align: center;
-}
-
-.jumbotron h1 {
-    margin-bottom: 30px;
-}
-
-#learn-more-btn {
-    margin-top: 25px;
+.container {
+    margin-top: 6em;
 }
 
 .page-content {
@@ -74,6 +53,17 @@ nav div, nav button {
     height: auto;
     color: white;
     padding: 0.5em 0 0.7em 0;
+    width: 100%;
+}
+
+#footer .copyright span {
+    font-size: 1.1em;
+    position: relative;
+    top: 1px;
+}
+
+#footer p {
+    text-align: center;
 }
 
 #footer a {
@@ -96,21 +86,6 @@ nav div, nav button {
     width: calc(100% + 15px);
 }
 
-#footer > div div {
-    align-content: center;
-    padding: 0.4em 0.25em;
-    margin: 0 auto;
-}
-
-#footer > div div p {
-    text-align: center;
-    vertical-align: middle;
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-    top: calc(50% - 3px);
-}
-
 .copyright {
     text-align: center;
 }
@@ -125,29 +100,41 @@ nav div, nav button {
     height: 2em;
     margin: 0 0.5em;
 }
-
-
-/* end universal elements and home page */
+/* end universal elements */
 
 /********************************************/
 
-/* start each data page */
-.page-content-navigator > a:first-child {
-    margin-right: 1em;
+/* start home page */
+/*#home-page {*/
+    /*background-size: cover;*/
+    /*background: url("../assets/images/misc/homepage-background2.jpg") no-repeat center center;*/
+/*}*/
+
+#home-page > .container > .page-content {
+    display: flex;
+    align-items: center;
 }
 
-.navigator-arrow {
-    position: relative;
-    top: -1px;
+.jumbotron {
+    align-content: center;
+    border-radius: 1em;
+    /*opacity: 0.95;*/
+    padding: 1.5em;
+    margin-bottom: 0;
 }
 
-a.navigator-disabled {
-    pointer-events: none;
-    cursor: default;
-    text-decoration:none;
-    color:gray;
+.jumbotron * {
+    text-align: center;
 }
-/* end each data page */
+
+.jumbotron h1 {
+    margin-bottom: 30px;
+}
+
+#learn-more-btn {
+    margin-top: 25px;
+}
+/* end home page */
 
 /********************************************/
 
@@ -195,6 +182,8 @@ a.navigator-disabled {
 
 .lessons ul {
     margin: 0 auto 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .lessons li{
@@ -202,17 +191,50 @@ a.navigator-disabled {
 }
 
 #html {
-    background: url('https://png.pngtree.com/thumb_back/fh260/back_pic/00/03/19/65561db9d067462.jpg');
+    background: url('../assets/images/misc/background1.jpg');
 }
 
 #css {
-    background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/59/79/0557a49d0f32599.jpg');
+    background: url('../assets/images/misc/background2.jpg');
 }
 
 #bootstrap {
-    background: url('http://www.powerpointhintergrund.com/uploads/red-background-6.jpg');
+    background: url('../assets/images/misc/background3.jpg');
 }
 /* end content page */
+
+/********************************************/
+
+/* start each topic page */
+.page-content-navigator > a:first-child {
+    margin-right: 1em;
+}
+
+.navigator-arrow {
+    position: relative;
+    top: -1px;
+}
+
+a.navigator-disabled {
+    pointer-events: none;
+    cursor: default;
+    text-decoration:none;
+    color:gray;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.image-view {
+    width: 100%;
+    height: auto;
+}
+
+.custom-list {
+    margin-top: 1em;
+}
+/* end each data page */
 
 /********************************************/
 
@@ -312,10 +334,13 @@ a.navigator-disabled {
 }
 
 .avatar-icon {
-    width: 30%;
+    width: 70%;
     height: auto;
     display: block;
     margin: auto;
+    border-radius: 50%;
+    border: 5px #ECEEEF solid;
+    padding: 5px;
 }
 
 /* end about page */
@@ -326,6 +351,11 @@ a.navigator-disabled {
 .form-label {
     font-style: italic;
     font-weight: bold;
+}
+
+#form-submit-alert {
+    margin-top: 2em;
+    display: none;
 }
 /* end contact page */
 

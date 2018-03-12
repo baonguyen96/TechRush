@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="../../../css/desktop-style.css">
     </head>
     <body>
-        <nav class="navbar navbar-toggleable-lg navbar-inverse bg-inverse" id="navigator">
+        <nav class="navbar fixed-top navbar-toggleable-lg navbar-inverse bg-inverse" id="navigator">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -61,11 +61,45 @@
                     </p>
                 </div>
 
-                <div>
-                    <img src="../../../assets/images/misc/sample-image.jpg" alt="Sample Image">
+                <div class="card">
+                    <img class="card-img-top image-view" src="../../../assets/images/misc/sample-image.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
 
-                <!-- add class="navigator-disabled" for first and last page -->
+                <div class="custom-list">
+                    <span>Unordered List</span>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+
+                <div class="custom-list">
+                    <span>Ordered List</span>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="../../../assets/images/misc/sample-image.jpg" class="image-view" alt="Image">
+                    </div>
+                    <div class="col-md-7">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+
+                <br/>
+
+                <!-- add class="navigator-disabled" for first and last page accordingly -->
                 <div class="page-content-navigator">
                     <a href="#" class="navigator-disabled">
                         <span class="navigator-arrow"><</span>
@@ -85,7 +119,7 @@
                     <p class="vertical-middle"><a href="../../sitemap.html">Site Map</a></p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="icon-list">
+                    <div class="icon-list vertical-middle">
                         <a href="#"><img src="../../../assets/images/icons/twitter.png" alt="Twitter"></a>
                         <a href="#"><img src="../../../assets/images/icons/linkedin.png" alt="LinkedIn"></a>
                         <a href="#"><img src="../../../assets/images/icons/instagram.png" alt="Instagram"></a>
@@ -93,7 +127,9 @@
                     </div>
                 </div>
                 <div class="col-sm-4 copyright">
-                    <p class="vertical-middle"><a href="../../contact.html">&copy;ITSS 3390 Team 4</a></p>
+                    <p class="vertical-middle">
+                        <a href="../../contact.html"><span>&copy;&ensp;</span>ITSS 3390 Team 4</a>
+                    </p>
                 </div>
             </div>
         </footer>

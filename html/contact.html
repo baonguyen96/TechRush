@@ -10,11 +10,12 @@
         <script src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="../scripts/contact.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/mobile-style.css">
         <link rel="stylesheet" type="text/css" href="../css/desktop-style.css">
     </head>
     <body>
-        <nav class="navbar navbar-toggleable-lg navbar-inverse bg-inverse" id="navigator">
+        <nav class="navbar fixed-top navbar-toggleable-lg navbar-inverse bg-inverse" id="navigator">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,14 +49,14 @@
                 <form id="contact-form">
                     <div class="form-group">
                         <label for="full-name-input" class="form-label">Full name</label>
-                        <input type="text" class="form-control" id="full-name-input" aria-describedby="emailHelp" placeholder="Enter your full name">
+                        <input type="text" class="form-control" id="full-name-input" aria-describedby="emailHelp" placeholder="Enter your full name" required>
                     </div>
 
                     <br/>
 
                     <div class="form-group">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
 
@@ -87,12 +88,18 @@
 
                     <div class="form-group">
                         <label for="exampleTextarea" class="form-label">Tell us more about your need(s)</label>
-                        <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Enter some messages..."></textarea>
+                        <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Enter some messages..." required></textarea>
                     </div>
 
                     <br/>
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="form-submit-button">Submit</button>
+
+                    <br/>
+
+                    <div class="alert alert-success text-center" role="alert" id="form-submit-alert">
+                        <strong>Thank you! </strong>Your message has been sent to us!
+                    </div>
 
                 </form>
             </section>
@@ -105,7 +112,7 @@
                     <p class="vertical-middle"><a href="sitemap.html">Site Map</a></p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="icon-list">
+                    <div class="icon-list vertical-middle">
                         <a href="#"><img src="../assets/images/icons/twitter.png" alt="Twitter"></a>
                         <a href="#"><img src="../assets/images/icons/linkedin.png" alt="LinkedIn"></a>
                         <a href="#"><img src="../assets/images/icons/instagram.png" alt="Instagram"></a>
@@ -113,7 +120,9 @@
                     </div>
                 </div>
                 <div class="col-sm-4 copyright">
-                    <p class="vertical-middle"><a href="contact.html">&copy;ITSS 3390 Team 4</a></p>
+                    <p class="vertical-middle">
+                        <a href="contact.html"><span>&copy;&ensp;</span>ITSS 3390 Team 4</a>
+                    </p>
                 </div>
             </div>
         </footer>
