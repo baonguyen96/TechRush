@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="TechRush website that showcase the front-end web technology">
-        <title>TechRush | Topic Template Page</title>
+        <title>Grid System</title>
         <link rel="icon" href="../../../assets/images/icons/favicon.png" type="image/png" sizes="16x16">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
@@ -47,57 +47,70 @@
 
         <div class="container">
             <section class="page-content">
-                <h3>Topic Title</h3>
+                <h3>Bootstrap Grid System</h3>
                 <hr/>
 
                 <div>
                     <p>
-                        Ultricies tristique nulla aliquet enim tortor. Diam ut venenatis tellus in metus vulputate eu scelerisque. Ornare quam viverra orci sagittis eu. Amet nisl purus in mollis nunc sed. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Pretium quam vulputate dignissim suspendisse. Massa ultricies mi quis hendrerit dolor magna. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Sit amet mattis vulputate enim nulla aliquet. Dictum non consectetur a erat nam at. Enim nulla aliquet porttitor lacus luctus accumsan. Magna etiam tempor orci eu lobortis elementum.
+                        Bootstrap Grid System is a concept that was created to provide quick, easy and efficient way to develop a responsive website layouts. It also predefined numerous grid classes for making grid layouts for different devices such as cellphones, tablets, desktops and laptops, etc.
+
                     </p>
                 </div>
 
                 <div>
-                    <p>
-                        Ultricies tristique nulla aliquet enim tortor. Diam ut venenatis tellus in metus vulputate eu scelerisque. Ornare quam viverra orci sagittis eu. Amet nisl purus in mollis nunc sed. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Pretium quam vulputate dignissim suspendisse. Massa ultricies mi quis hendrerit dolor magna. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Sit amet mattis vulputate enim nulla aliquet. Dictum non consectetur a erat nam at. Enim nulla aliquet porttitor lacus luctus accumsan. Magna etiam tempor orci eu lobortis elementum.
+                    <p>Bootstrap’s Grid System is made up of 3 things:</p>
+                    <ol>
+                        <li>Container</li>
+                        <li>Row</li>
+                        <li>Column</li>
+                    </ol>
+                </div>
+<hr/>
+                <div>
+                   <h4>1. Container</h4>
+                    <p>Every Bootstrap grid system must have a container in order to create rows and columns. A container consists of a simple <b>div</b> element with a class of <b>.container</b>. The container is used to provide a proper width for the layout, acting as a wrapper for the content.
+                    The image below is an example of creating a container:
                     </p>
                 </div>
 
                 <div class="card">
-                    <img class="card-img-top image-view" src="../../../assets/images/misc/sample-image.jpg" alt="Card image cap">
+                    <img class="card-img-top image-view" src="../../../assets/images/contents/bootstrap/container pic.png" alt="Card image cap">
                     <div class="card-block">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text"><b>example of creating a container.</b> </p>
                     </div>
                 </div>
 
-                <div class="custom-list">
-                    <span>Unordered List</span>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-
-                <div class="custom-list">
-                    <span>Ordered List</span>
-                    <ol>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ol>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-5">
-                        <img src="../../../assets/images/misc/sample-image.jpg" class="image-view" alt="Image">
+                    <div>
+                        <p>As you can see from the image above, the container wraps around the content and also sets left and right margins. You also have to pay attention when creating a container with different fixed widths in different devices’ screen sizes:</p>
+                        <div class="card">
+                            <img class="card-img-top image-view" src="../../../assets/images/contents/bootstrap/container width sizes.png" alt="Card image cap">
+                            <div class="card-block">
+                                <p class="card-text"><b>Credit: <a href="https://www.sitepoint.com/">https://www.sitepoint.com/</a></b> </p>
+                            </div>
                     </div>
-                    <div class="col-md-7">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                </div>
+                <hr/>
+
+                <div>
+                    <h4>2. Row</h4>
+                    <p>Row acts like a wrapper around the columns. The purpose of creating a row is to keep the layouts’ columns inside from overflowing onto the other rows.</p>
+                    <p>The rows extent from left side to right side of the container element. It is created by adding the class <b>.row</b> to a block level element inside a container.</p>
+                    <p>The image below is an example of creating a row:</p>
+                    <div class="card">
+                        <img class="card-img-top image-view" src="../../../assets/images/contents/bootstrap/creating row.png" alt="Card image cap">
+                        <div class="card-block">
+                            <p class="card-text"><b>Example of creating a row</b> </p>
+                        </div>
                     </div>
                 </div>
 
+                <div>
+                    <p>The number of rows you can create is not limited by the system. </p>
+                </div>
+                <hr/>
+                <h4>3. Column</h4>
+                <p>Creating columns in a grid system is the single most complicated step that we have to pull through in developing the layout of a website. There are several different ways to position a column in CSS, a variety of widths as well as factors like responsive design to consider.</p>
+                <p>Bootstrap uses different column class prefixes for different sized devices. These prefixes are shown in the table below:</p>
                 <br/>
 
                 <!-- add class="navigator-disabled" for first and last page accordingly -->
