@@ -234,6 +234,11 @@ a.navigator-disabled {
 .custom-list {
     margin-top: 1em;
 }
+
+.section-title {
+    font-weight: bold;
+}
+
 /* end each data page */
 
 /********************************************/
