@@ -239,6 +239,23 @@ a.navigator-disabled {
     font-weight: bold;
 }
 
+.code-background {
+    background-color: #a0a0a0;
+    opacity: 0.5;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.code-background span{
+    text-align: center;
+}
+
+.code {
+    font-family: "Segoe UI", sans-serif;
+    color: grey;
+}
+
 /* end each data page */
 
 /********************************************/
