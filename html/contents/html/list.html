@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="TechRush website that showcase the front-end web technology">
-        <title>TechRush | Topic Template Page</title>
+        <title>TechRush | Lists</title>
         <link rel="icon" href="../../../assets/images/icons/favicon.png" type="image/png" sizes="16x16">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
@@ -52,51 +52,87 @@
 
                 <div>
                     <p>
-                        Ultricies tristique nulla aliquet enim tortor. Diam ut venenatis tellus in metus vulputate eu scelerisque. Ornare quam viverra orci sagittis eu. Amet nisl purus in mollis nunc sed. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Pretium quam vulputate dignissim suspendisse. Massa ultricies mi quis hendrerit dolor magna. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Sit amet mattis vulputate enim nulla aliquet. Dictum non consectetur a erat nam at. Enim nulla aliquet porttitor lacus luctus accumsan. Magna etiam tempor orci eu lobortis elementum.
+                        Using HTML, we can create various types of lists in order to more accurately organize and format information. In this section we'll be looking at both <strong>Unordered</strong> and <strong>Ordered</strong> lists. Each type of list provides a different structure output with the intent of accomplishing different purposes.
+                    </p>
+                </div>
+
+                <div class="section-title">Unordered Lists</div>
+                <div>
+                    <p>
+                        Using the <span class="code"><span class="code">&lt;ul&gt;</span></span> tag we can begin an <strong>Unordered List</strong>. This initiates a list that utilizes bullet points for each list item. List items are specified using the <span class="code"><span class="code">&lt;li&gt;</span></span> tag.
                     </p>
                 </div>
 
                 <div>
                     <p>
-                        Ultricies tristique nulla aliquet enim tortor. Diam ut venenatis tellus in metus vulputate eu scelerisque. Ornare quam viverra orci sagittis eu. Amet nisl purus in mollis nunc sed. Purus ut faucibus pulvinar elementum integer enim neque volutpat ac. Pretium quam vulputate dignissim suspendisse. Massa ultricies mi quis hendrerit dolor magna. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Sit amet mattis vulputate enim nulla aliquet. Dictum non consectetur a erat nam at. Enim nulla aliquet porttitor lacus luctus accumsan. Magna etiam tempor orci eu lobortis elementum.
+                <pre>
+Example:
+<span class="code">&lt;ul&gt;</span>
+    <span class="code">&lt;li&gt;</span> List Item 1 <span class="code">&lt;/li&gt;</span>
+    <span class="code">&lt;li&gt;</span> List Item 2 <span class="code">&lt;/li&gt;</span>
+    <span class="code">&lt;li&gt;</span> List Item 3 <span class="code">&lt;/li&gt;</span>
+<span class="code">&lt;ul&gt;</span>
+                </pre>
+                    </p>
+                    <p>
+                    Outputs:
+                    <ul>
+                    <li> List Item 1 </li>
+                    <li> List Item 2 </li>
+                    <li> List Item 3 </li>
+                    </ul>
                     </p>
                 </div>
 
-                <div class="card">
-                    <img class="card-img-top image-view" src="../../../assets/images/misc/sample-image.jpg" alt="Card image cap">
-                    <div class="card-block">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                <div class="section-title">Ordered Lists</div>
+                <div>
+                    <p>
+                        Using the <span class="code"><span class="code">&lt;ol&gt;</span></span> tag we can begin an <strong>Ordered List</strong>. This initiates a list that utilizes numbered bullet points for each list item as opposed to the un-numbered bullet points. Using the same <span class="code"><span class="code">&lt;li&gt;</span></span> tag, list items can be specified for the overall list.
+                    </p>
                 </div>
 
-                <div class="custom-list">
-                    <span>Unordered List</span>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-
-                <div class="custom-list">
-                    <span>Ordered List</span>
+                <div>
+                    <p>
+                    <pre>
+Example:
+<span class="code">&lt;ol&gt;</span>
+    <span class="code">&lt;li&gt;</span> List Item 1 <span class="code">&lt;/li&gt;</span>
+    <span class="code">&lt;li&gt;</span> List Item 2 <span class="code">&lt;/li&gt;</span>
+    <span class="code">&lt;li&gt;</span> List Item 3 <span class="code">&lt;/li&gt;</span>
+<span class="code">&lt;/ol&gt;</span>
+                </pre>
+                    </p>
+                    <p>
+                        Outputs:
                     <ol>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
+                        <li> List Item 1 </li>
+                        <li> List Item 2 </li>
+                        <li> List Item 3 </li>
                     </ol>
+                    </p>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-5">
-                        <img src="../../../assets/images/misc/sample-image.jpg" class="image-view" alt="Image">
+                <br />
+                <br />
+                    <div class="tag-table">
+                        <div class="row">
+                            <div class="col-4 section-title">Tag Used</div>
+                            <div class="col-8 section-title">Definition</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><span class="code">&lt;ul&gt;</span></div>
+                            <div class="col-8">Used for establishing an Unordered List</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><span class="code">&lt;ol&gt;</span></div>
+                            <div class="col-8">Used for establishing an Ordered List</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"><span class="code">&lt;li&gt;</span></div>
+                            <div class="col-8">Used to define the different list items</div>
                     </div>
-                    <div class="col-md-7">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </div>
+
+
 
                 <br/>
 
