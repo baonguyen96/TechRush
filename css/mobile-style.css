@@ -247,6 +247,8 @@ a.navigator-disabled {
 
 .section-title {
     font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 2em;
 }
 
 .code-background {
@@ -264,6 +266,8 @@ a.navigator-disabled {
 .code {
     font-family: "Segoe UI", sans-serif;
     color: grey;
+    font-weight: bold;
+    font-style: italic;
 }
 
 /* end each data page */
