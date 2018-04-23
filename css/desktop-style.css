@@ -54,13 +54,6 @@
         margin-bottom: 8em;
     }
 
-    #footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        /*height: 4em;*/
-    }
-
     #footer span {
         top: 6px;
     }

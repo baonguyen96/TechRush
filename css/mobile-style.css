@@ -81,7 +81,6 @@ nav div, nav button {
     color: white;
 }
 
-
 #footer > .row {
     width: calc(100% + 15px);
 }
@@ -91,7 +90,8 @@ nav div, nav button {
 }
 
 .icon-list {
-    width: fit-content;
+    padding-left: 1em;
+    width: 14em;
     margin: 0 auto;
 }
 
@@ -106,10 +106,6 @@ nav div, nav button {
 /********************************************/
 
 /* start home page */
-/*#home-page {*/
-    /*background-size: cover;*/
-    /*background: url("../assets/images/misc/homepage-background2.jpg") no-repeat center center;*/
-/*}*/
 
 #home-page > .container > .page-content {
     display: flex;
@@ -119,13 +115,13 @@ nav div, nav button {
 .jumbotron {
     align-content: center;
     border-radius: 1em;
-    /*opacity: 0.95;*/
     padding: 1.5em;
     margin-bottom: 0;
 }
 
 .jumbotron * {
     text-align: center;
+    min-width: 0 !important;
 }
 
 .jumbotron h1 {
@@ -211,6 +207,11 @@ nav div, nav button {
 #bootstrap {
     background: url('../assets/images/misc/background3.jpg');
 }
+
+#wordpress {
+    background: url('../assets/images/misc/background4.jpg');
+}
+
 /* end content page */
 
 /********************************************/
